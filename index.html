@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Inbox</h2>
+            <ul id="email-list">
+                <!-- Emails will be dynamically added here -->
+            </ul>
+        </div>
+        <div class="main-content">
+            <h2>Compose Email</h2>
+            <form id="email-form">
+                <input type="text" id="to" placeholder="To:" required>
+                <input type="text" id="subject" placeholder="Subject:" required>
+                <textarea id="message" placeholder="Message:" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div id="email-view" class="hidden">
+                <h2>Email Details</h2>
+                <p id="view-to"></p>
+                <p id="view-subject"></p>
+                <p id="view-message"></p>
+                <button id="back">Back to Inbox</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
